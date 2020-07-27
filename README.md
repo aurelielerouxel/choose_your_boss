@@ -1,4 +1,4 @@
-# EvaluationObjectif :  Cette semaine vous réalisez votre première évaluation. 
+# Evaluation-Objectif : 
 
 Vous allez mettre en œuvre l’ensemble des savoir-faire acquis jusqu’à maintenant pour produire un site internet statique.
 
@@ -6,7 +6,7 @@ Vous allez mettre en œuvre l’ensemble des savoir-faire acquis jusqu’à main
 - Maquetter une application.
 - Réaliser une interface utilisateur statique et adaptable.
 
-**Sujet: Reproduire la page d’accueil de ChooseYourBoss.**
+***Sujet: Reproduire la page d’accueil de ChooseYourBoss.***
 
 Pour cette évaluation votre objectif sera de reproduire de manière responsive une partie de la page d’accueil du célèbre site d’emploi ChooseYouBoss. 
 
