@@ -87,8 +87,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* General rules */
+* {
+  font-family: 'Mulish', sans-serif;
+  padding: 0;
+  margin: 0;
+}
 
-/* Utility classes */
+.inscription {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  background-color: red;
+}
+
+/* Body */
 
 /* Header */
 
@@ -114,7 +126,7 @@ textarea {
 }
 
 @media screen and (min-width: 1201px) {
-  
+
 }
 
 /* ==========================================================================
