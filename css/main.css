@@ -88,27 +88,34 @@ textarea {
    ========================================================================== */
 /* General rules */
 
-
-
 /* Utility classes */
-
-
 
 /* Header */
 
-
-
 /* Nav */
 
+/* Main */
 
+/* Footer */
 
 /* Index */
 
-
-
 /* Single */
 
+/* Utility classes */
 
+/* Media query */
+@media screen and (min-width: 540px ) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1201px) {
+  
+}
 
 /* ==========================================================================
    Helper classes
