@@ -86,35 +86,158 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* General rules */
-* {
-  font-family: 'Mulish', sans-serif;
-  padding: 0;
-  margin: 0;
+/* Utility classes colors */
+.backgroundColorBlue {
+  background-color: #1d3557;
 }
 
-.inscription {
-  position: -webkit-sticky;
+.backgroudColorPastelBlue {
+  background-color: #caf0f8;
+  opacity: 085;
+}
+
+.backgroundColorLightGrey {
+  background-color: #e5e5e5;
+}
+
+.colorTextLightBlue {
+  color: #72efdd;
+}
+
+.colorTextWhite {
+  color: white;
+}
+
+/* Utility classes */
+
+.size60PerCent {
+  width: 60%;
+  height: auto;
+}
+
+.size75PerCent {
+  width: 75%;
+  height: auto;
+}
+
+.size85PerCent {
+  width: 85%;
+  height: auto;
+}
+
+.size140PerCent {
+  width: 140%;
+  height: auto;
+}
+
+.sizeBurgerMenu {
+  width: 2em;
+  height: auto;
+}
+ 
+.alignColumnCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* .alignCenter {
+  display: flex;
+  justify-content: center;
+} */
+
+/* .alignCascading {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.fontWeight {
+  font-weight: 900;
+}
+
+.fontSizeNumber {
+  font-size: 2em;
+}
+
+.noMarginPadding {
+  margin: 0;
+  /* padding: 0; */
+  line-height: 0.1em;
+}
+
+/* General rules */
+* {
+  /* font-family: 'Mulish', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+}
+/* Sticky button */
+/* .inscription {
+  position: fixed;
   position: sticky;
   top: 10px;
   background-color: red;
 }
 
+#inscription {
+  position: fixed;
+  position: sticky;
+  top: 10px;
+  background-color: red;
+} */
+
 /* Body */
+body {
+  background: url("https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/splash-general-3.png") 
+  no-repeat;
+  opacity: 1;
+}
+
+h1 h2 h3 {
+  font-weight: 900;
+  font-size: 1em;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border-radius: 25px;
+  padding: 0.5em;
+}
 
 /* Header */
+header {
+  margin: 0.5em 0.5em 1em 0.5em;
+}
 
 /* Nav */
-
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 0em 1em 1.3em;
+}
 /* Main */
+section {
+  height: 100%;
+  padding: 2em;
+}
+
+article { 
+  margin: 0 2em 0 2em;
+}
+
+img {
+  margin: 1em 0;
+}
 
 /* Footer */
 
 /* Index */
 
 /* Single */
-
-/* Utility classes */
 
 /* Media query */
 @media screen and (min-width: 540px ) {

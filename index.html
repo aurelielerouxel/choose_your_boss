@@ -6,8 +6,9 @@
   <title>Choose Your Boss</title>
   <link rel="stylesheet" href="main.css">
   <link rel="icon" href="img/cyb_favicon.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
-  <meta name="description" content="">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta name="description" content="Choose Your Boos">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- <meta property="og:title" content=""> -->
@@ -27,18 +28,20 @@
 
 <body>
   <nav>
-    <figure>
-      <img src="img/open-menu.png" alt="image menu burger">
-    </figure>
-    <figure>
-      <img src="img/cyb_logo.png" alt="image logo site choose your boss">
-    </figure> 
-    <hr>   
+    <div>
+      <a href="#"><img class="sizeBurgerMenu" src="img/open-menu.png" alt="menu burger"></a>
+    </div>
+    <div>
+      <a href="#"><img class="size60PerCent" 
+        src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/logos/logo-2019.svg" 
+        alt="logo choose your boss"></a>
+    </div> 
+    <hr>
   </nav>
 
   <header>
     <section>
-      <h1>Le matching parfait est aussi profesionnel</h1>
+      <h1 class="fontWeight">Le matching parfait est aussi profesionnel</h1>
       <p>Découvre quelles offres d'emploi informatique et numérique matchent avec ton profil et choisis ta 
         prochaine squad !</p>
       <button type="submit">Je m'inscris</button>
@@ -46,74 +49,87 @@
   </header>
 
   <main>
-    <section>
-      <p>152 000</p>
-      <h3>Candidats</h3>
-      <p>473 000</p>
-      <h3>Rencontres</h3>
-      <p>13 300</p>
-      <h3>Recruteurs</h3>
+    <section class="backgroundColorBlue alignColumnCenter noMarginPadding">
+      <p class="colorTextWhite fontWeight fontSizeNumber">152 000</p>
+      <h3 class="colorTextLightBlue">Candidats</h3>
+      <p class="colorTextWhite fontWeight fontSizeNumber">473 000</p>
+      <h3 class="colorTextLightBlue">Rencontres</h3>
+      <p class="colorTextWhite fontWeight fontSizeNumber">13 300</p>
+      <h3 class="colorTextLightBlue">Recruteurs</h3>
     </section>
     <!-- Insérer un bouton sticky -->
     <!-- <div id="inscription">
       <a class="inscription" href="#">Je m'inscris</a>
     </div> -->
-  <article>
+    <section class="alignColumnCenter backgroudColorPastelBlue">
       <h2>L'algorithme travaille pour toi</h2>
       <p>Accède à des matchings personnalisés tout en restant protégé et anonyme.</p>
-    <section>
-      <img src="img/matching1.png" alt="image colorée">
-      <h3>Personnalisation</h3>
-      <p>Notre algorythme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
+      <article class="alignColumnCenter">
+        <img class="size75PerCent" src="img/matching1.png" alt="image colorée">
+        <h3>Personnalisation</h3>
+        <p>Notre algorythme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
+      </article>
+      <article class="alignColumnCenter">
+        <img class="size75PerCent" src="img/matching2.png" alt="image colorée">
+        <h3>3 en 1</h3>
+        <p>Tu as le pouvoir d'accepter les matchings, les demandes directes ou postuler directement aux offres 
+          qui te plaisent.</p>
+      </article>
+      <article class="alignColumnCenter">
+        <img class="size75PerCent" src="img/matching3.png" alt="image colorée">
+        <h3>Anonymat</h3>
+        <p>Ton profil reste protége et anonyme jusqu'à ta mise en relation avec le recruteur de ton choix,
+          évitant ainsi toute sur-sollicitation.</p>
+      </article> 
+      <button type="submit">J'accède à mes matching</button>
+    </section>
+    <section class="alignColumnCenter">
+        <h2>Tous les jobs informatiques et numériques</h2>
+        <p>Découvre les dernières offres d'emploi tech', produit, data, marketing et design.</p>
+      <article class="alignColumnCenter">
+        <img class="size85PerCent" 
+          src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/tech.svg"
+          alt="image colorée">
+          <!-- <img class="sizeImage" 
+          src="img/cyb_img_yellow.png"
+          alt="image colorée"> -->
+        <h3>Tech</h3>
+      </article>
+      <article class="alignColumnCenter">
+        <img class="size140PerCent" 
+          src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/produit.svg" 
+          alt="image colorée">
+        <h3>Produit</h3>
+      </article>
+      <article class="alignColumnCenter">
+        <img class="size140PerCent" 
+          src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/marketing.svg" 
+          alt="image colorée">
+        <h3>Marketing</h3>
+      </article>
+      <article class="alignColumnCenter">
+        <img class="size140PerCent" 
+          src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" 
+          alt="image colorée">
+        <h3>Data</h3>
+      </article>
+      <article class="alignColumnCenter">
+        <img class="size140PerCent" 
+        src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/design.svg" 
+          alt="image colorée">
+        <h3>Création</h3>
+      </article>
+      <button type="submit">Je découvre les offres</button>
     </section>
     <section>
-      <img src="img/matching2.png" alt="image colorée">
-      <h3>3 en 1</h3>
-      <p>Tu as le pouvoir d'accepter les matchings, les demandes directes ou postuler directement aux offres 
-        qui te plaisent.</p>
+      <article class="alignColumnCenter backgroundColorLightGrey">
+        <h2>Mérites-tu un meilleur salaire ?</h2>
+        <h3>Baromètre des salaires IT</h3>
+        <p>Découvre le salaire des différents métiers informatiques et numériques par niveau d'expérience et 
+          localisation.</p>
+        <button type="submit">Je découvre mon salaire</button>
+      </article>
     </section>
-    <section>
-      <img src="img/matching3.png" alt="image colorée">
-      <h3>Anonymat</h3>
-      <p>Ton profil reste protége et anonyme jusqu'à ta mise en relation avec le recruteur de ton choix,
-        évitant ainsi toute sur-sollicitation.</p>
-    </section>
-    <button type="submit">J'accède à mes matching</button>
-  </article>
-    <article>
-      <h2>Tous les jobs informatiques et numériques</h2>
-      <p>Découvre les dernières offres d'emploi tech', produit, data, marketing et design.</p>
-    <section>
-      <img src="img/cyb_img_yellow.png" alt="image colorée">
-      <h3>Tech</h3>
-    </section>
-    <section>
-      <img src="img/cyb_img_pink.png" alt="image colorée">
-      <h3>Produit</h3>
-    </section>
-    <section>
-      <img src="img/cyb_img_blue.png" alt="image colorée">
-      <h3>Marketing</h3>
-    </section>
-    <section>
-      <img src="img/cyb_img_data.png" alt="image colorée">
-      <h3>Data</h3>
-    </section>
-    <section>
-      <img src="img/cyb_img_design.png" alt="image colorée">
-      <h3>Création</h3>
-    </section>
-    <button type="submit">Je découvre les offres</button>
-  </article>
-  <article>
-    <section>
-      <h2>Mérites-tu un meilleur salaire ?</h2>
-      <h3>Baromètre des salaires IT</h3>
-      <p>Découvre le salaire des différents métiers informatiques et numériques par niveau d'expérience et 
-        localisation.</p>
-      <button type="submit">Je découvre mon salaire</button>
-    </section>
-  </article>
   </main>
 
   <footer>
