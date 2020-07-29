@@ -93,7 +93,6 @@ textarea {
 
 .backgroudColorPastelBlue {
   background-color: #caf0f8;
-  opacity: 085;
 }
 
 .backgroundColorLightGrey {
@@ -108,50 +107,23 @@ textarea {
   color: white;
 }
 
-/* Utility classes */
-
-.size60PerCent {
-  width: 60%;
-  height: auto;
-}
-
-.size75PerCent {
-  width: 75%;
-  height: auto;
-}
-
-.size85PerCent {
-  width: 85%;
-  height: auto;
-}
-
-.size140PerCent {
-  width: 140%;
-  height: auto;
-}
-
+/* Utility classes size */
 .sizeBurgerMenu {
   width: 2em;
   height: auto;
 }
- 
-.alignColumnCenter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+
+.sizeLogo {
+  width: 60%;
+  height: auto;
 }
 
-/* .alignCenter {
-  display: flex;
-  justify-content: center;
-} */
-
-/* .alignCascading {
-  display: flex;
+/* Utility classes */
+.alignCenter {
   flex-wrap: wrap;
-} */
+  justify-content: space-around;
+  text-align: center;
+}
 
 .fontWeight {
   font-weight: 900;
@@ -161,17 +133,23 @@ textarea {
   font-size: 2em;
 }
 
-.noMarginPadding {
-  margin: 0;
-  /* padding: 0; */
-  line-height: 0.1em;
+.justifyText {
+  text-align: justify;
 }
 
+.margin {
+  margin: 2em;
+}
+
+.padding {
+  padding: 2em;
+}
 /* General rules */
 * {
-  /* font-family: 'Mulish', sans-serif; */
   font-family: 'Poppins', sans-serif;
   color: #1d3557;
+  margin: 0;
+  padding: 0.5em 0 0.5em 0;
 }
 /* Sticky button */
 /* .inscription {
@@ -192,12 +170,12 @@ textarea {
 body {
   background: url("https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/splash-general-3.png") 
   no-repeat;
-  opacity: 1;
+  width: 100%;
+  height: auto;
 }
 
 h1 h2 h3 {
   font-weight: 900;
-  font-size: 1em;
 }
 
 button {
@@ -209,7 +187,7 @@ button {
 
 /* Header */
 header {
-  margin: 0.5em 0.5em 1em 0.5em;
+  margin: 0.5em 2em 3em 0.5em;
 }
 
 /* Nav */
@@ -219,18 +197,18 @@ nav {
   justify-content: space-between;
   padding: 1em 0em 1em 1.3em;
 }
+
 /* Main */
-section {
-  height: 100%;
-  padding: 2em;
+article img {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: auto;
 }
 
-article { 
-  margin: 0 2em 0 2em;
-}
-
-img {
-  margin: 1em 0;
+div {
+  width: 100%;
+  height: auto;
 }
 
 /* Footer */
@@ -240,7 +218,45 @@ img {
 /* Single */
 
 /* Media query */
-@media screen and (min-width: 540px ) {
+@media screen and (min-width: 375px) {
+  /* Remove photo */
+  header figure {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  /* Utility classes size */
+  .sizeBurgerMenu {
+    width: 3em;
+    height: auto;
+  }
+
+  .sizeLogo {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Generals rules */
+  article {
+    width: 45%;
+    height: auto;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    width: 60%;
+    height: auto;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 }
 
