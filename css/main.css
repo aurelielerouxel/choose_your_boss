@@ -182,6 +182,7 @@ button {
   background-color: blue;
   color: white;
   border-radius: 25px;
+  border-style: none;
   padding: 0.5em;
 }
 
@@ -211,18 +212,21 @@ div {
   height: auto;
 }
 
-/* Footer */
-
-/* Index */
-
-/* Single */
-
 /* Media query */
 @media screen and (min-width: 375px) {
+  /* Remove nav menu */
+  nav div ul {
+    display: none;
+  }
+
   /* Remove photo */
   header figure {
     display: none;
   }
+
+  section figure {
+    display: none;
+  } 
 }
 
 @media screen and (min-width: 540px) {
@@ -257,14 +261,66 @@ div {
     display: flex;
     flex-wrap: wrap;
   }
-
 }
 
 @media screen and (min-width: 768px) {
+  /* Generals rules */
+  div {
+    width: 30%;
+    height: auto;
+  }
 
+  article {
+    width: 30%;
+    height: auto;
+  }
+
+  article img {
+    width: 90%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 1201px) {
+  /* Generals rules */
+
+  ul {
+    list-style-type: none ;
+  }
+
+  nav {
+    /* justify-content: start; */
+    text-align: start;
+  }
+
+  /* nav img {
+    display: flex;
+    justify-content: start;
+  } */
+
+  figure img {
+    width: 60%;
+    height: auto;
+  }
+
+  /* Reveal nav menu */
+  nav div ul {
+    display: block;
+  } 
+  
+  /* Reveal photo */
+  header figure {
+    display: block;
+  }
+    
+  section figure {
+    display: block;
+  }
+
+  /* Remove burger menu */
+  nav>div>a {
+    display: none;
+  }
 
 }
 
