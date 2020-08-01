@@ -127,7 +127,7 @@ textarea {
   text-align: center;
 }
 
-.specialCaracters {
+.specialCharacters {
   font-weight: 900;
   font-size: 1.2em;
   color: #2b345d;
@@ -142,6 +142,14 @@ textarea {
 .fontSizeNumber {
   font-size: 2em;
 }
+
+.noPadding {
+  padding: 0;
+}
+
+.padding {
+  padding: 1em;
+}
 /* jusu'ici */
 
 .sectionMargin {
@@ -150,14 +158,6 @@ textarea {
 
 .justifyText {
   text-align: justify;
-}
-
-.noPadding {
-  padding: 0;
-}
-
-.padding {
-  padding: 1em;
 }
 
 /* General rules */
@@ -317,11 +317,6 @@ section article p {
     height: auto;
   }
 
-  /* button {
-    width: 60%;
-    height: auto;
-  } */
-
   section {
     display: flex;
     flex-wrap: wrap;
@@ -412,10 +407,6 @@ section article p {
     width: 75%;
     height: auto;
     flex-wrap: wrap;
-  }
-
-  main section article a img {
-
   }
 
   main section div {
