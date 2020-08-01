@@ -88,23 +88,27 @@ textarea {
    ========================================================================== */
 /* Utility classes colors */
 .backgroundColorBlue {
-  background-color: #1d3557;
+  background-color: #2b345d;
 }
 
 .backgroudColorPastelBlue {
-  background-color: #caf0f8;
+  background-color: #eee9fa;
 }
 
 .backgroundColorLightGrey {
-  background-color: #e5e5e5;
+  background-color: #eeeeee;
 }
 
 .colorTextLightBlue {
-  color: #72efdd;
+  color: #22ffdd;
 }
 
 .colorTextWhite {
   color: white;
+}
+
+.colorButton {
+  columns: #4d22ff;
 }
 
 /* Utility classes size */
@@ -114,17 +118,23 @@ textarea {
 }
 
 .sizeLogo {
-  width: 60%;
+  width: 75%;
   height: auto;
 }
 
 /* Utility classes */
 .alignCenter {
-  flex-wrap: wrap;
-  justify-content: space-around;
   text-align: center;
 }
 
+.specialCaracters {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: #2b345d;
+
+}
+
+/* A revoir */
 .fontWeight {
   font-weight: 900;
 }
@@ -132,25 +142,37 @@ textarea {
 .fontSizeNumber {
   font-size: 2em;
 }
+/* jusu'ici */
+
+.sectionMargin {
+  margin: 2em;
+}
 
 .justifyText {
   text-align: justify;
 }
 
-.margin {
-  margin: 2em;
+.noPadding {
+  padding: 0;
 }
 
 .padding {
-  padding: 2em;
+  padding: 1em;
 }
+
 /* General rules */
 * {
   font-family: 'Poppins', sans-serif;
   color: #1d3557;
   margin: 0;
-  padding: 0.5em 0 0.5em 0;
+  padding: 0;
 }
+
+button {
+  margin: 2em 0 1em 0;
+  padding: 0.5em;
+}
+
 /* Sticky button */
 /* .inscription {
   position: fixed;
@@ -179,50 +201,78 @@ h1 h2 h3 {
 }
 
 button {
-  background-color: blue;
+  background-color: #4d22ff;
   color: white;
   border-radius: 25px;
-  padding: 0.5em;
-}
-
-/* Header */
-header {
-  margin: 0.5em 2em 3em 0.5em;
+  border-style: none;
 }
 
 /* Nav */
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 1em 0em 1em 1.3em;
+  margin: 1em;
+}
+
+nav figure {
+  margin-left: 5em;
+}
+
+/* Header */
+header section {
+  margin: 3em 1em 2em 1em;
 }
 
 /* Main */
 article img {
-  margin: 0;
-  padding: 0;
-  width: 50%;
+  width: 60%;
   height: auto;
 }
 
-div {
+section article {
   width: 100%;
   height: auto;
 }
 
-/* Footer */
+header section {
+  padding-bottom: 1em;
+}
 
-/* Index */
+main section div {
+  padding: 0.5em 0 0.5em 0;
+}
 
-/* Single */
+h2 {
+  padding: 2em 0 1em 0;
+}
+
+h3 {
+  padding-bottom: 1em;
+}
+
+section article p {
+  padding: 0.5em 3em;
+}
 
 /* Media query */
 @media screen and (min-width: 375px) {
+  /* Nav */
+  /* Remove nav menu */
+  nav aside ul {
+    display: none;
+  } 
+
+  /* Header */
   /* Remove photo */
-  header figure {
+  header section img {
     display: none;
   }
+
+  /* Main */
+  /* Remove last image main */
+  main section figure img {
+    display: none;
+  } 
 }
 
 @media screen and (min-width: 540px) {
@@ -237,35 +287,141 @@ div {
     height: auto;
   }
 
+  .width100PerCent {
+    width: 100%;
+  }
+
   /* Generals rules */
-  article {
-    width: 45%;
+  /* Nav */
+  nav figure {
+    margin-left: 30%;
+  }
+
+  /* Header */
+  header section {
+    margin: 5em 1em 4em 1em;
+  }
+
+  /* Main */
+  main section article {
+    width: 50%;
     height: auto;
+  }
+
+  section div {
+    width: 100%;
   }
 
   article img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
-  button {
+  /* button {
     width: 60%;
     height: auto;
-  }
+  } */
 
   section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
-
 }
 
 @media screen and (min-width: 768px) {
+  /* Generals rules */
+  /* Nav */
+  nav figure {
+    margin-left: 35%;
+  }
 
+  /* Main */
+  main section article {
+    width: 30%;
+    height: auto;
+  }
+
+  article div {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 1201px) {
+  /* Generals rules */
+  /* Nav */
+  /* Remove burger menu */
+  nav>div {
+    display: none;
+  }
+  
+  /* Place the logo */
+  nav figure {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+  }
 
+  /* Reveal and place nav menu */
+  nav aside ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  } 
+
+  nav {
+    justify-content: space-between;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    padding-left: 2.2em;
+  }
+
+  /* Header */
+  /* Reveal photo */
+  header section img {
+    display: flex;
+  }
+
+  header section figure {
+    width: 50%;
+    height: auto;
+  }
+
+  header section figure img {
+    width: 75%;
+    height: auto;
+  }
+
+  header section figure, header section article {
+    width: 45%;
+    height: auto;
+  }
+
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Main */
+  /* Reveal image */
+  main section figure img {
+    display: flex;
+    width: 75%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  main section article a img {
+
+  }
+
+  main section div {
+    width: 30%;
+    height: auto;
+  }
 }
 
 /* ==========================================================================
