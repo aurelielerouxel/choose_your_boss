@@ -99,16 +99,16 @@ textarea {
   background-color: #eeeeee;
 }
 
+.colorButton {
+  columns: #4d22ff;
+}
+
 .colorTextLightBlue {
   color: #22ffdd;
 }
 
 .colorTextWhite {
   color: white;
-}
-
-.colorButton {
-  columns: #4d22ff;
 }
 
 /* Utility classes size */
@@ -127,13 +127,16 @@ textarea {
   text-align: center;
 }
 
+.justifyText {
+  text-align: justify;
+}
+
 .specialCharacters {
   font-weight: 900;
   font-size: 1.2em;
   color: #2b345d;
 }
 
-/* A revoir */
 .fontWeight {
   font-weight: 900;
 }
@@ -142,21 +145,12 @@ textarea {
   font-size: 2em;
 }
 
-.noPadding {
-  padding: 0;
-}
-
 .padding {
   padding: 1em;
 }
-/* jusu'ici */
 
 .sectionMargin {
   margin: 2em;
-}
-
-.justifyText {
-  text-align: justify;
 }
 
 /* General rules */
@@ -192,9 +186,9 @@ body {
   height: auto;
 }
 
-h1 h2 h3 {
+/* h1 h2 h3 {
   font-weight: 900;
-}
+} */
 
 button {
   background-color: #4d22ff;
@@ -208,7 +202,6 @@ nav {
   display: flex;
   flex-direction: row;
   margin: 1em;
-  border-bottom: #4d22ff;
 }
 
 nav figure {
@@ -218,37 +211,34 @@ nav figure {
 /* Header */
 header section {
   margin: 3em 1em 2em 1em;
+  padding-bottom: 1em;
 }
 
 /* Main */
-article img {
+main section div img {
+  width: 75%;
+  height: auto;
+}
+
+main article img {
   width: 60%;
   height: auto;
-}
-
-section article {
-  width: 100%;
-  height: auto;
-}
-
-header section {
-  padding-bottom: 1em;
 }
 
 main section div {
   padding: 0.5em 0 0.5em 0;
 }
 
+main section div p {
+  padding: 0.5em 3em;
+}
+
 h2 {
-  padding: 2em 0 1em 0;
+  padding: 1em;
 }
 
 h3 {
-  padding-bottom: 1em;
-}
-
-section article p {
-  padding: 0.5em 3em;
+  padding: 1em;
 }
 
 /* Media query */
@@ -274,6 +264,11 @@ section article p {
 
 @media screen and (min-width: 540px) {
   /* Utility classes size */
+  .sizeArticle {
+    width: 50%;
+    height: auto;
+  }
+
   .sizeBurgerMenu {
     width: 3em;
     height: auto;
@@ -284,6 +279,7 @@ section article p {
     height: auto;
   }
 
+  /* Utility classes */
   .width100PerCent {
     width: 100%;
   }
@@ -300,24 +296,19 @@ section article p {
   }
 
   /* Main */
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   main section article {
     width: 50%;
     height: auto;
   }
 
-  section div {
+  main section div {
     width: 100%;
-  }
-
-  article img {
-    width: 80%;
-    height: auto;
-  }
-
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
   }
 }
 
@@ -333,15 +324,19 @@ section article p {
     width: 30%;
     height: auto;
   }
-
-  article div {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media screen and (min-width: 1201px) {
   /* Generals rules */
+  #inscription {
+    display: none;
+  }
+
+  .sizeArticle {
+    width: 30%;
+    height: auto;
+  }
+
   /* Nav */
   /* Remove burger menu */
   nav>div {
@@ -368,7 +363,7 @@ section article p {
 
   nav aside ul li a {
     text-decoration: none;
-    padding-left: 3.5em;
+    padding-left: 2em;
   }
 
   /* Header */
@@ -377,28 +372,24 @@ section article p {
     display: flex;
   }
 
-  header section figure {
-    width: 50%;
-    height: auto;
-  }
-
   header section figure img {
     width: 75%;
     height: auto;
   }
 
   header section figure, header section article {
-    width: 45%;
+    width: 40%;
     height: auto;
   }
 
-  header {
+  header section {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   header section {
-    margin: 5em;
+    margin: 5em 0 5em 5em;
   }
 
   /* Main */
@@ -415,8 +406,8 @@ section article p {
     height: auto;
   }
 
-  article img {
-    width: 60%;
+  main section article {
+    width: 20%;
     height: auto;
   }
 }
