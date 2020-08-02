@@ -131,7 +131,6 @@ textarea {
   font-weight: 900;
   font-size: 1.2em;
   color: #2b345d;
-
 }
 
 /* A revoir */
@@ -174,19 +173,16 @@ button {
 }
 
 /* Sticky button */
-/* .inscription {
-  position: fixed;
-  position: sticky;
-  top: 10px;
-  background-color: red;
-}
-
 #inscription {
   position: fixed;
   position: sticky;
   top: 10px;
-  background-color: red;
-} */
+  background-color:#4d22ff;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 1em 0;
+}
 
 /* Body */
 body {
@@ -212,6 +208,7 @@ nav {
   display: flex;
   flex-direction: row;
   margin: 1em;
+  border-bottom: #4d22ff;
 }
 
 nav figure {
@@ -369,9 +366,9 @@ section article p {
     justify-content: space-between;
   }
 
-  nav ul li a {
+  nav aside ul li a {
     text-decoration: none;
-    padding-left: 2.2em;
+    padding-left: 3.5em;
   }
 
   /* Header */
@@ -400,6 +397,10 @@ section article p {
     justify-content: space-between;
   }
 
+  header section {
+    margin: 5em;
+  }
+
   /* Main */
   /* Reveal image */
   main section figure img {
@@ -411,6 +412,11 @@ section article p {
 
   main section div {
     width: 30%;
+    height: auto;
+  }
+
+  article img {
+    width: 60%;
     height: auto;
   }
 }
